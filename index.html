@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<title>Gavi</title>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="shortcut icon" href="https://gatherer.wizards.com/Handlers/Image.ashx?type=symbol&set=C20&size=small&rarity=M" />
+
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+<link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+<!-- Navbar (sit on top) -->
+<!-- ===========================================================COME BACK TO THIS LATER (NAVIGATION BAR)=============================================================================================== -->
+<div class="top">
+  <div class="w3-bar" id="myNavbar">
+    <a class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
+      <i class="fa fa-bars"></i>
+    </a>
+    <a href="#home" class="w3-bar-item w3-button">HOME</a>
+    <a href="#about" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-user"></i> ABOUT</a>
+    <a href="#portfolio" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-dice"></i> CARDS</a>
+    <a href="#contact" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-paw"></i> YES</a>
+    <a href="#" class="w3-bar-item w3-button w3-hide-small w3-right w3-hover-red">
+      <i class="fa fa-search"></i>
+    </a>
+  </div>
+
+  <!-- Navbar on small screens -->
+  <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
+    <a href="#about" class="w3-bar-item w3-button" onclick="toggleFunction()">ABOUT</a>
+    <a href="#portfolio" class="w3-bar-item w3-button" onclick="toggleFunction()">CARDS</a>
+    <a href="#contact" class="w3-bar-item w3-button" onclick="toggleFunction()">YES</a>
+  </div>
+</div>
+
+<!-- First Parallax Image with Logo Text -->
+<div class="bgimg-1" id="home">
+  <div class="title">GAVI, NEST WARDEN</div>
+</div>
+
+<!-- ==========================================================Section 1: About Section================================================================ -->
+<div class="container-section" id="about">
+
+  <h3 class="center">ABOUT GAVI</h3>
+  <div class="row">
+    <div class="sec1-left">
+      <p><img src="https://cdn-icons-png.flaticon.com/512/103/103410.png" class="sec1-icon"><strong></i>Artist: Randy Vargas</strong></p>
+      <img src="https://www.artofmtg.com/wp-content/uploads/2020/04/Gavi-Nest-Warden.png" class="sec1-img" id="sec1-img" alt="Gavi, Nest Warden">
+
+      <!-- Trigger the Modal -->
+
+      <!-- The Modal -->
+      <div class="modal" id="modal">
+
+        <!-- The Close Button -->
+        <span class="close">&times;</span>
+
+        <!-- Modal Content (The Image) -->
+        <img class="modal-content" id="modal-content">
+
+        <!-- Modal Caption (Image Text) -->
+        <div id="caption"></div>
+      </div>
+
+      <script>
+        // Get the modal
+        var modal = document.getElementById("modal");
+      
+        // Get the image and insert it inside the modal - use its "alt" text as a caption
+        var img = document.getElementById("sec1-img");
+        var modalImg = document.getElementById("modal-content");
+        var captionText = document.getElementById("caption");
+        img.onclick = function(){
+          modal.style.display = "block";
+          modalImg.src = this.src;
+          captionText.innerHTML = this.alt;
+        }
+      
+        // Get the <span> element that closes the modal
+        var span = document.getElementsByClassName("close")[0];
+      
+        // When the user clicks on <span> (x), close the modal
+        span.onclick = function() {
+          modal.style.display = "none";
+        }
+      
+      </script>
+
+    </div>
+
+    <div class="sec1-right">
+      <table>
+        <tr>
+          <th>Card Name:</th>
+          <td>Gavi, Nest Warden</td>
+        </tr>
+        <tr>
+          <th>Mana Cost:</th>
+          <td>2BlueRedWhite</td>
+        </tr>
+        <tr>
+          <th>Converted Mana Cost:</th>
+          <td>5</td>
+        </tr>
+        <tr>
+          <th>Types:</th>
+          <td>Legendary Creature — Human Shaman</td>
+        </tr>
+        <tr>
+          <th>Card Text:</th>
+          <td>You may pay 0 rather than pay the cycling cost of the first card you cycle each turn.
+            Whenever you draw your second card each turn, create a 2/2 red and white Dinosaur Cat creature token.</li>
+          </td>
+        </tr>
+        <tr>
+          <th>Flavor Text:</th>
+          <td>A mother's love transcends species.</td>
+        </tr>
+        <tr>
+          <th>P/T:</th>
+          <td>2 / 5</td>
+        </tr>
+        <tr>
+          <th>Expansion:</th>
+          <td><img src="https://gatherer.wizards.com/Handlers/Image.ashx?type=symbol&set=C20&size=small&rarity=M"> Ikoria Commander (Mythic Rare) Ikoria Commander</td>
+        </tr>
+        <tr>
+          <th>Rarity:</th>
+          <td>Mythic Rare</td>
+        </tr>
+
+      </table>
+    </div>
+
+  </div>
+</div>
+
+
+<!-- Second Parallax Image with Portfolio Text -->
+<div class="bgimg-2">
+    <div class="display-mid">
+      COMMANDER DECK
+    </div>
+</div>
+
+<!-- ===================================Section 2: Commander Section================================================================== -->
+
+
+<!-- Container (Commander Section) -->
+<div class="container-section" id="portfolio">
+  <h3 class="center">Timeless Wisdom Deck</h3>
+  <p class="center" >Timeless Wisdom is a 100 card Commander preconstructed deck with a cycling theme, featured in Commander 2020 also known as the <em><strong>Ikoria: Lair of Behemoths Commander decks</strong></em><br>
+    Timeless Wisdom is Jeskai colored. The primary commander Gavi, Nest Warden, and the secondary commanders are Akim, the Soaring Wind and Brallin, Skyshark Rider partnered with Shabraz, the Skyshark.</p> 
+  <h3 class="center">Notable Cards</h3>
+  <p class="center"><em>Click on the images to make them bigger</em></p><br>
+  
+  <div class="row">
+    <div class="column">
+      <img src="https://assets.moxfield.net/cards/card-EZwKP-normal.webp"  onclick="onClick(this)" class="sec2-img" alt="Fierce Guardianship">
+    </div>
+
+    <div class="column">
+      <img src="https://assets.moxfield.net/cards/card-EQwne-normal.webp"  onclick="onClick(this)" class="sec2-img" alt="Chnadra, Flamecaller">
+    </div>
+
+    <div class="column">
+      <img src="https://assets.moxfield.net/cards/card-kpN41-normal.webp"  onclick="onClick(this)" class="sec2-img" alt="Brallin, Skyshark Rider">
+    </div>
+
+    <div class="column">
+      <img src="https://assets.moxfield.net/cards/card-Eg1D5-normal.webp"  onclick="onClick(this)" class="sec2-img" alt="Shabraz, the Skyshark">
+    </div>
+    <div class="column">
+      <img src="https://assets.moxfield.net/cards/card-kpxr4-normal.webp"  onclick="onClick(this)" class="sec2-img" alt="Dinosaur Cat">
+    </div>
+  </div>
+
+  <!-- Responsive Grid. Four columns on tablets, laptops and desktops. Will stack on mobile devices/small screens (100% width) -->
+  <!-- <div class="w3-row-padding center">
+    <div class="w3-col m3">
+      <img src="https://assets.moxfield.net/cards/card-EZwKP-normal.webp" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="The mist over the mountains">
+    </div>
+
+    <div class="w3-col m3">
+      <img src="https://assets.moxfield.net/cards/card-EQwne-normal.webp" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Coffee beans">
+    </div>
+
+    <div class="w3-col m3">
+      <img src="https://assets.moxfield.net/cards/card-kpN41-normal.webp" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Bear closeup">
+    </div>
+
+    <div class="w3-col m3">
+      <img src="https://assets.moxfield.net/cards/card-Eg1D5-normal.webp" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Quiet ocean">
+    </div>
+  
+
+    <div class="w3-col m3">
+      <img src="https://assets.moxfield.net/cards/card-kpxr4-normal.webp" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="The mist">
+    </div>
+  </div> -->
+
+  <div style="padding:12px; margin-top:16px" class="center">
+    <button type="button" style="margin-top:64px; padding:12px 24px; background-color: lightgray; border:none;">LOAD MORE</button>
+  </div>
+
+</div>
+  
+  <!-- Modal for full size images on click-->
+  <div id="modal01" class="w3-modal w3-black" onclick="this.style.display='none'">
+    <span class="w3-button w3-large w3-black w3-display-topright" title="Close Modal Image"><i class="fa fa-remove"></i></span>
+    <div class="w3-modal-content w3-animate-zoom center w3-transparent w3-padding-64">
+      <img id="img01" class="w3-image" style="border-radius: 24px;">
+      <p id="caption" class="w3-opacity w3-large"></p>
+    </div>
+  </div>
+
+
+  <!-- <div class="row center" style="background-color: #616161; padding:16px;"> -->
+  <div class="w3-row w3-center w3-dark-grey w3-padding-16">
+    <h3 class="center">Deck Summary</h3>
+    <div class="sec2-section">
+        <span style="font-size: 24px">1</span><br>
+        Planeswalker
+    </div>
+    <div class="sec2-section">
+        <span style="font-size: 24px">23</span><br>
+        Creatures
+    </div>
+    <div class="sec2-section">
+        <span style="font-size: 24px">8</span><br>
+        Soceries
+    </div>
+    <div class="sec2-section">
+        <span style="font-size: 24px">4</span><br>
+        Instants
+    </div>
+    <div class="sec2-section">
+        <span style="font-size: 24px">10</span><br>
+        Artifacts
+    </div>
+    <div class="sec2-section">
+        <span style="font-size: 24px">14</span><br>
+        Enchantments
+    </div>
+    <div class="sec2-section">
+        <span style="font-size: 24px">35</span><br>
+        Lands
+    </div>
+
+    <div class="sec2-section" style="border:none">
+        <span style="font-size: 24px">12</span><br>
+        Tokens
+    </div>
+  </div>
+
+
+
+
+
+
+<!-- Third Parallax Image with Portfolio Text -->
+<div class="bgimg-3">
+  <div class="display-mid">
+     <span class="w3-xxlarge w3-text-white w3-wide">Tell Me Why~</span>
+  </div>
+</div>
+
+<!-- Container (Contact Section) -->
+<div class="container-section" id="contact">
+  <h3 class="center">Why Gavi is the best Commnder Deck</h3>
+  <ol class="center">
+      <li>she can produce CAT DINOSAUR TOKENS</li>
+      <li>shark in the sky. I REPEAT. SHARK. IN. SKY.</li>
+      <li>cycling is healthy, gavi encourages good lifestyle habits</li>
+  </ol>
+
+
+  <!-- <div class="w3-row w3-padding-32 w3-section">
+    <div class="w3-col m4 w3-container">
+    </div>
+    <div class="w3-col m8 w3-panel">
+      <form action="/action_page.php" target="_blank">
+        <div class="w3-row-padding" style="margin:0 -16px 8px -16px">
+          <div class="w3-half">
+            <input class="w3-input w3-border" type="text" placeholder="Name" required name="Name">
+          </div>
+          <div class="w3-half">
+            <input class="w3-input w3-border" type="text" placeholder="Email" required name="Email">
+          </div>
+        </div>
+        <input class="w3-input w3-border" type="text" placeholder="Message" required name="Message">
+        <button class="w3-button w3-black w3-right w3-section" type="submit">
+          <i class="fa fa-paper-plane"></i> SEND MESSAGE
+        </button>
+      </form>
+    </div>
+  </div> -->
+</div>
+
+<!-- Footer -->
+<footer class="footer">
+  <a href="#home" type="button" style="padding:12px 24px; background-color: white; border:none;"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+  <div style="margin-top: 16px; font-size:24px;">
+    Thank you for listening to my ted talk &lt;3
+  </div>
+  
+</footer>
+ 
+<script>
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+
+// Change style of navbar on scroll
+window.onscroll = function() {myFunction()};
+function myFunction() {
+    var navbar = document.getElementById("myNavbar");
+    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+        navbar.className = "w3-bar" + " w3-card" + " w3-animate-top" + " w3-white";
+    } else {
+        navbar.className = navbar.className.replace(" w3-card w3-animate-top w3-white", "");
+    }
+}
+
+// Used to toggle the menu on small screens when clicking on the menu button
+function toggleFunction() {
+    var x = document.getElementById("navDemo");
+    if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+    } else {
+        x.className = x.className.replace(" w3-show", "");
+    }
+}
+</script>
+
+</body>
+</html>
